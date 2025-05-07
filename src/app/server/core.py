@@ -48,9 +48,4 @@ class ApplicationCore(InitPluginProtocol):
             AuthController
         ])
 
-        from typing import Literal
-        app_config.signature_namespace.update(
-            {"Literal": Literal}
-        )
-
         return app_config
